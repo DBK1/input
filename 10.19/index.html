@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Document</title>
+		</head>
+		<body>
+			<input id="inp" type="text">
+			<button id="btn">按钮</button>
+		</body>
+		
+		</html>
+
+		<script>
+			window.onload=function () {
+			var inp=document.getElementById('inp')
+			var btn=document.getElementById('btn')
+			inp.oninput=function(){
+				if (inp.value.length>9) {
+					btn.disabled=true;
+				}else{
+					btn.disabled=false;
+				}
+			}
+
+		
+			}
+		</script>
